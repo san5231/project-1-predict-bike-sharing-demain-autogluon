@@ -35,12 +35,12 @@ I will spend more time on dataset feature engineering. The improvement after fea
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
 
 
-![model_train_score.png](img/model_train_score.png)
+![model_train_score.png](model_train_score.png)
 
 ### Create a line plot showing the top kaggle score for the three (or more) prediction submissions during the project.
 
 
-![model_test_score.png](img/model_test_score.png)
+![model_test_score.png](model_test_score.png)
 
 ## Summary
 The objective for this project is to predict bike sharing demand by using dataset provided in Kaggle and using AutoGluon as the solution. Overall, three model trainings were performed. Initial training was performed as default dataset without any data wrangling and without hyperparameter tuning. The model testing score after submitted to Kaggle is 1.39545. The second model training was performed with feature engineering to the training dataset. With default hyperparameters in AutoGluon, the Kaggle score improved to 0.55464 after the data wrangling. The third training is based on the second training's dataset, three hyperparameters were tuned: 1) time_limit increased from 600 to 1800; 2) num_bag_folds from 0 to 5; 3) num_stack_levels from 0 to 3. After the third training, the model score only improved from 0.55464 to 0.46430. In the future, the model could be further optimize by improving the features in the training dataset.
